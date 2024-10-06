@@ -2,82 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="menu.css"> 
     <link rel="icon" type="image/jpg" href="/picture/OIP (1).png">
 </head>
 <body>
+    <!--footer-->
     <header>
-        <nav class="navbar1">
-            <ul>
-                <li><a href=""><</a></li>
-                <li><a href="">></a></li>
-                <li>
-                    <div class="dropdown">
-                        <button>STORE</button>
-                            <div class="content">
-                                <a href="">Features</a>
-                                <a href="">Discovery Queue</a>
-                                <a href="">Wishlist</a>
-                                <a href="">Point Shop</a>
-                                <a href="">News</a>
-                                <a href="">Stats</a>
-                            </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <button>LABRARY</button>
-                            <div class="content">
-                                <a href="">Home</a>
-                                <a href="">Collections</a>
-                                <hr>
-                                <a href="">Downloads</a>
-                            </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <button>COMMUNITY</button>
-                            <div class="content">
-                                <a href="">Home</a>
-                                <a href="">Discussions</a>
-                                <a href="">Workshop</a>
-                                <a href="">Market</a>
-                                <a href="">Broadcasts</a>
-                            </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <button>YOUR ACCOUNT</button>
-                            <div class="content">
-                                <a href="">Activity</a>
-                                <a href="">Profile</a>
-                                <a href="">Friends</a>
-                                <a href="">Groups</a>
-                                <a href="">Contents</a>
-                                <a href="">Badges</a>
-                                <a href="">Inventory</a>
-                                <a href="">Year in review</a>
-                            </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header> 
-
-    <nav >
-
-    </nav>
-
-    <main>
-
-    </main>
-
-    <footer>
-
-    </footer>
+        <a href="#" class="logo">GAMEHUB.</a>
+         <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Store</a></li>
+            <li><a href="">Library</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">Your account</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchingBox">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search games">
+            </div>
+        </div>
+        <div class="toggleMenu"></div>
+    </header>
+    <!--Home-->
+    <div class="banner">
+        <div class="blog">
+            <div class="content">
+                <h1>welcome to GAMEHUB</h1>
+                <p>Khám phá nhiều điều mới mẻ với thư <br>viên game đồ sộ của GameHub</p>
+                <a href="#">Kham phá</a>
+            </div>
+            <img src="/picture/Remove-bg.ai_1728223669815.png" width="1000px">
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll',function (){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY>0);
+        });
+    </script>
 </body>
 </html>
