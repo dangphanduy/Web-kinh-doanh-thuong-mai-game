@@ -1,57 +1,133 @@
-boby{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #050e2d;
+}
+/*scroll bar thanh lăn*/
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #1aeeef;
+    border-radius: 5px;
 }
 header{
-    background-color:rgb(23,29,37) ;
-    padding: 25px;
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    padding: 7px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b2141;
+    transition: 0.5s;
+    z-index: 1000;
 }
-.navbar1 ul{
-    list-style-type: none;
-    padding: auto;
-    margin: 0px;
+header .sticky{
+    background: #1b2141;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+header .logo{
+    position: relative;
+    color: #fff;
     text-decoration: none;
-    overflow: hidden;
-    padding-left: 5px;
+    font-size: 2em;
+    font-weight: 700;
 }
-.navbar1 a{
-    text-align: center;
-    color: white;
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
     margin: 10px;
-    display:inline-block;
+}
+header ul li a{
+    color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
-.navbar1 li{
-    float: left;
+header ul li a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0px 0px 10px #1aeeef;
 }
-.dropdown button{
-    background-color: rgb(23,29,37);
-    color: white;
-    padding: 10px 15px;
+header .action .searchingBox{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+}
+header .action .searchingBox i{
+    font-size: 1.5em;
     border: none;
-    cursor: pointer;
+    color: #222;
 }
-.dropdown a{
-    text-align: center;
-    background-color: rgb(23,29,37);
-    color: white;
-    display: block;
+header .action .searchingBox input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #222;
+}
+/*Home*/
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .blog{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .blog .content {
+    width: 50%;
+    height: 100%;
+}
+.banner .blog .content h1{
+    font-size: 4em;
+    color: #fff;
+    letter-spacing: 1px;
+}   
+.banner .blog .content p{
+    color: #fff;
+}
+.banner .blog img{
+    width: 1000px;
+    padding: 75px;
+}
+.banner .blog .content a{
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 20px 10px;
+    border: 1px solid #1aeeef;
     text-decoration: none;
-    
+    font-weight: 800;
+    font-size: medium;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
 }
-.dropdown .content{
-    display: none;
-    position: absolute;
-    background-color: rgb(23,29,37);
-    box-shadow: 2px 2px 5px black;
-}
-.dropdown:hover .content{
-    display: block;
-}
-.dropdown:hover button{
-    color: rgb(25,106,177);
-    text-decoration: underline;
-}
-.dropdown a:hover{
-    background-color: whitesmoke;
-    color:  black;        
+.banner .blog .content a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0px 0px 10px #1aeeef;
 }
