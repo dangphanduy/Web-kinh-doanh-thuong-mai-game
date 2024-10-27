@@ -1,0 +1,321 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #050e2d;
+}
+/*scroll bar thanh lăn*/
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #1aeeef;
+    border-radius: 5px;
+}
+header{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b2141;
+    transition: 0.5s;
+    z-index: 1000;
+}
+header .sticky{
+    background: #1b2141;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0px 0px 10px #1aeeef;
+}
+header .logOut{
+    padding: 10px 25px;
+    cursor: pointer;
+}
+header .logOut a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px;
+    color: black;
+}
+header .logOut .setting .material-symbols-outlined{
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+}
+header .logOut .selection{
+    display: none;
+    position: absolute;
+    background-color: #fbfcff;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+}
+header .logOut:hover .selection{
+    display: block;
+}
+header .logOut a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0px 0px 10px #1aeeef;
+}
+/*first content*/
+section {
+    top: 100px;
+    margin-bottom: 100px;
+}
+.home{
+    width: 100%;
+    height: 100%;
+}
+.home .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .swiper-slide a img {
+    display: inline-block;
+    width: 1500px;  
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+
+/*second content*/
+.second-content{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.second-content .action{
+    width: 1495px;
+    height: auto;
+    margin-left: 100px ;
+    margin-bottom: 10px;
+}
+.second-content .action .searchingBox{
+    display: flex;
+    padding: 30px 10px;
+    justify-content: space-between;
+}
+.second-content .action .searchingBox h2{
+    color: #fff;
+    letter-spacing: 3px;
+    display: inline-block;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+.second-content .action .content{
+    display:inline-block;
+    width: 1500px;  
+    height: 410px;
+}
+.second-content .action .content .box{
+    display: block;
+    width: 290px;  
+    height: 420px;
+    margin: 5px 5px;
+    float: left;
+}
+.second-content .action .content .box .Inbox{
+    width: 285px;
+    height: 320px;
+    overflow: hidden;
+}
+.second-content .action .content .box .Inbox img{
+    display: block;
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms;
+}
+.second-content .action .content .box .Inbox:hover img{
+    transform: scale(1.15);
+}
+.second-content .action .content .box h3{
+    color: #fff;
+    font-size:larger;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+.second-content .action .content .box p{
+    font-size: small;
+    display:inline-block;
+    background: grey;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 2px 2px;
+}
+.second-content .extend{
+    border: 2px solid #1aeeef;
+    width: 180px;
+    margin-top: 420px;
+    margin-left: 755px;
+}
+.second-content .extend h4{
+    color: #1aeeef;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: large;
+}
+.second-content .extend a{
+    text-decoration: none;
+}
+.second-content .extend h4:hover{
+    background: #1aeeef;
+    color: #1b2141;
+}
+
+/*third content*/
+.third-content{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.third-content .action1{
+    width: 1495px;
+    height: auto;
+    margin-left: 100px ;
+    margin-bottom: 10px;
+}
+.third-content .action1 .searchingBox1{
+    display: flex;
+    padding: 30px 10px;
+    justify-content: space-between;
+}
+.third-content .action1 .searchingBox1 h2{
+    color: #fff;
+    letter-spacing: 3px;
+    display: inline-block;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+.third-content .action1 .content1{
+    display:inline-block;
+    width: 1500px;  
+    height: 410px;
+}
+.third-content .action1 .content1 .box1{
+    display: block;
+    width: 290px;  
+    height: 420px;
+    margin: 5px 5px;
+    float: left;
+}
+.third-content .action1 .content1 .box1 .Inbox1{
+    width: 285px;
+    height: 320px;
+    overflow: hidden;
+}
+.third-content .action1 .content1 .box1 .Inbox1 img{
+    display: block;
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms;
+}
+.third-content .action1 .content1 .box1 .Inbox1:hover img{
+    transform: scale(1.15);
+}
+.third-content .action1 .content1 .box1 h3{
+    color: #fff;
+    font-size:larger;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+.third-content .action1 .content1 .box1 p{
+    font-size: small;
+    display:inline-block;
+    background: grey;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 2px 2px;
+}
+.third-content .extend1{
+    border: 2px solid #1aeeef;
+    width: 180px;
+    margin-top: 420px;
+    margin-left: 755px;
+}
+.third-content .extend1 h4{
+    color: #1aeeef;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: large;
+}
+.third-content .extend1 a{
+    text-decoration: none;
+}
+.third-content .extend1 h4:hover{
+    background: #1aeeef;
+    color: #1b2141;
+}
