@@ -1,0 +1,158 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #050e2d;
+}
+/*scroll bar thanh lăn*/
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #1aeeef;
+    border-radius: 5px;
+}
+header{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b2141;
+    transition: 0.5s;
+    z-index: 1000;
+}
+header .sticky{
+    background: #1b2141;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+    font-size: 20px;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0px 0px 10px #1aeeef;
+}
+header .logOut{
+    padding: 10px 25px;
+    cursor: pointer;
+}
+header .logOut a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px;
+    color: black;
+}
+header .logOut .setting .material-symbols-outlined{
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+}
+header .logOut .selection{
+    display: none;
+    position: absolute;
+    background-color: #fbfcff;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+}
+header .logOut:hover .selection{
+    display: block;
+}
+header .logOut a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0px 0px 10px #1aeeef;
+}
+
+aside{
+    width: 1500px;
+    height: 600px;
+    margin-left: 100px ;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    background-color: #1b2141;
+    align-items: center;
+    justify-content: center;
+}
+aside .display{
+    display: inline-flex;
+    width: 1300px;
+    height: auto;
+    margin-left: 100px ;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+aside .display .leftSide{
+    width: 40%;
+    height: 500px;
+    display: flex;
+    border: #494949 solid 3px;
+}
+aside .display .leftSide img{
+    width: fit-content;
+    height: 500px;
+}
+aside .display .rightSide{
+    width: 1000px;
+    height: auto;
+    display: block;
+    padding-left: 100px;
+}
+aside .display .rightSide .account-info{
+    width: 1000px;
+    height: 460px;
+}
+aside .display .rightSide .account-info h2{
+    color: #fff;
+    font-size: 2em;
+    margin-left: 170px;
+    margin-bottom: 30px;
+}
+aside .display .rightSide .account-info p{
+    color: #fff;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+aside .display .rightSide button{
+    background-color: #1b2141;
+    color: white;
+    border: 3px solid #1aeeef;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+aside .display .rightSide button:hover {
+    background-color: #1aeeef;
+    color: #000;
+}
