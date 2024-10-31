@@ -1,0 +1,175 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #050e2d;
+}
+/*scroll bar thanh lăn*/
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #1aeeef;
+    border-radius: 5px;
+}
+header{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b2141;
+    transition: 0.5s;
+    z-index: 1000;
+}
+header .sticky{
+    background: #1b2141;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+    font-size: 20px;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0px 0px 10px #1aeeef;
+}
+header .logOut{
+    padding: 10px 25px;
+    cursor: pointer;
+}
+header .logOut a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px;
+    color: black;
+}
+header .logOut .setting .material-symbols-outlined{
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+}
+header .logOut .selection{
+    display: none;
+    position: absolute;
+    background-color: #fbfcff;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+}
+header .logOut:hover .selection{
+    display: block;
+}
+header .logOut a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0px 0px 10px #1aeeef;
+}
+/*list games*/
+.second-content{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.second-content .action{
+    width: 1495px;
+    height: auto;
+    margin-left: 100px ;
+    margin-bottom: 10px;
+}
+.second-content .action .searchingBox{
+    display: flex;
+    padding: 30px 10px;
+    justify-content: space-between;
+}
+.second-content .action .searchingBox h2{
+    color: #fff;
+    letter-spacing: 3px;
+    display: inline-block;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+.second-content .action .searchingBox .InsearchingBox{
+    width: 40%;
+    padding: 10px 16px;
+    background: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+.second-content .action .searchingBox .InsearchingBox input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #222;
+}
+.second-content .action .content{
+    display:inline-block;
+    width: 1500px;  
+    height: 410px;
+}
+.second-content .action .content .box{
+    display: block;
+    width: 290px;  
+    height: 420px;
+    margin: 5px 5px;
+    float: left;
+}
+.second-content .action .content .box .Inbox{
+    width: 285px;
+    height: 320px;
+    overflow: hidden;
+}
+.second-content .action .content .box .Inbox img{
+    display: block;
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms;
+}
+.second-content .action .content .box .Inbox:hover img{
+    transform: scale(1.15);
+}
+.second-content .action .content .box h3{
+    color: #fff;
+    font-size:larger;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+.second-content .action .content .box p{
+    font-size: small;
+    display:inline-block;
+    background: grey;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 2px 2px;
+}
+
