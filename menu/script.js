@@ -21,5 +21,5 @@ function saveAccountInfo() {
     localStorage.setItem('password', password);
 
     // Điều hướng đến trang account.html
-    window.location.href = '/html/menu.html';
+    window.location.href = 'menu.html';
 }
