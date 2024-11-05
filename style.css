@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../picture/backround/z5939572852014_d1e827e0c42ed607227679259b6568ce.jpg') no-repeat;
+    background: url('picture/backround/z5939572852014_d1e827e0c42ed607227679259b6568ce.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
