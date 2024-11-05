@@ -1,0 +1,212 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #050e2d;
+}
+/*scroll bar thanh lăn*/
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #1aeeef;
+    border-radius: 5px;
+}
+header{
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b2141;
+    transition: 0.5s;
+    z-index: 1000;
+}
+header .sticky{
+    background: #1b2141;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0px 0px 10px #1aeeef;
+}
+header .logOut{
+    padding: 10px 25px;
+    cursor: pointer;
+}
+header .logOut a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px;
+    color: black;
+}
+header .logOut .setting .material-symbols-outlined{
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+}
+header .logOut .selection{
+    display: none;
+    position: absolute;
+    background-color: #fbfcff;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5px;
+}
+header .logOut:hover .selection{
+    display: block;
+}
+header .logOut a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0px 0px 10px #1aeeef;
+}
+/*left*/
+.chung{
+    width: 1600px;
+    height: 560px;
+    display: flex;
+}
+.left{
+    width: 300px;
+    height: auto;
+    margin-top: 100px;
+    background-color: #1b2141;
+}
+.left h1 {
+    color: #fff;
+    margin-left: 30px;
+    border-bottom: 2px solid #1aeeef;
+    margin-right: 50px;
+    text-align: center;
+}
+#library{
+    width: 300px;
+    height: auto;
+    min-height: 740px;
+    margin-top: 20px;
+    background-color: #1b2141;
+}
+.left h1 .white-text {
+    color: white;
+    padding: 50px 50px;
+    font-size: 20px;
+}
+#clearLibrary{
+    width: 150px;
+    height: 50px;
+    background-color: #1b2141;
+    color: white;
+    border: none;
+    border: 3px solid #1aeeef;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#clearLibrary:hover{
+    background-color: #1aeeef;
+    color: #000;
+}
+.game {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    color: #fff;
+}
+.game img{
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+/*RIGHT*/
+.right{
+    padding-top: 75px;
+
+}
+.right .action{
+    width: 1300px;
+    height: auto;
+    margin-left: 100px ;
+    margin-bottom: 10px;
+}
+.right .action .searchingBox{
+    display: flex;
+    padding: 30px 10px;
+    justify-content: space-between;
+}
+.right .action .searchingBox h2{
+    color: #fff;
+    letter-spacing: 3px;
+    display: inline-block;
+    border-bottom: 2px solid #1aeeef;
+    padding-bottom: 10px;
+}
+.right .action .content .box{
+    display: block;
+    width: 290px;  
+    height: 420px;
+    margin: 5px 5px;
+    float: left;
+}
+.right .action .content .box .Inbox{
+    width: 285px;
+    height: 320px;
+    overflow: hidden;
+}
+.right .action .content .box .Inbox img{
+    display: block;
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms;
+}
+.right .action .content .box .Inbox:hover img{
+    transform: scale(1.15);
+}
+.right .action .content .box h3{
+    color: #fff;
+    font-size:larger;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+.right .action .content .box p{
+    font-size: small;
+    display:inline-block;
+    background: grey;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 2px 2px;
+}
