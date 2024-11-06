@@ -309,6 +309,10 @@ article .picShow .pic img{
     margin-top: 20px;
     border: #494949 solid 2px;
 }
+.LastContent .text h3 {
+    color: #fff;
+    font-size: 32px;
+}
 .LastContent .text .Rightt{
     display: block;
     width: 40%;
