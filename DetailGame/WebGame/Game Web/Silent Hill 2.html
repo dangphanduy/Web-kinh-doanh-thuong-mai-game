@@ -154,17 +154,27 @@
     </div>
     <script>
         function purchaseGame() {
-            const game ={
-                name: "Silent Hill 2",
-                Image:"..\picture\MV5BZDRlN2MyNmItMWI3ZS00OTkwLWIwM2EtNjcxZGUwZjkzZWEzXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.png"
-            }
-            //luu game
-            let buygames=JSON.parse(localStorage.getItem('buygames')) || [];
+        const game = {
+            name: "Silent Hill 2",
+        };
+        
+        
+        let buygames = JSON.parse(localStorage.getItem('buygames')) || [];
+        
+        
+        const DaMua = buygames.some(buygame => buygame.name === game.name);
+        
+        if (!DaMua) {
             buygames.push(game);
-            localStorage.setItem('buygames',JSON.stringify(buygames));
-
-            window.location.href='../../../library.html';
-        }   
+            localStorage.setItem('buygames', JSON.stringify(buygames));
+            alert("Game đã dc thêm vào library");
+        } else {
+            alert("Game đã được mua");
+        }
+        
+        
+        window.location.href = '../../../library.html';
+    }
     </script>
 </body>
 </html>
