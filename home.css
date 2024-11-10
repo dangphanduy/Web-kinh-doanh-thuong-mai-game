@@ -209,10 +209,20 @@ section {
     color: #fff;
     padding: 2px 2px;
 }
+.second-content .action .content .box p{
+    font-size: small;
+    display:inline-block;
+    background: grey;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    padding: 2px 2px;
+}
 .second-content .extend{
     border: 2px solid #1aeeef;
     width: 180px;
-    margin-top: 420px;
+    margin-top: 500px;
     margin-left: 755px;
 }
 .second-content .extend h4{
@@ -229,93 +239,4 @@ section {
 .second-content .extend h4:hover{
     background: #1aeeef;
     color: #1b2141;
-}
-
-/*third content*/
-.third-content{
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-.third-content .action1{
-    width: 1495px;
-    height: auto;
-    margin-left: 100px ;
-    margin-bottom: 10px;
-}
-.third-content .action1 .searchingBox1{
-    display: flex;
-    padding: 30px 10px;
-    justify-content: space-between;
-}
-.third-content .action1 .searchingBox1 h2{
-    color: #fff;
-    letter-spacing: 3px;
-    display: inline-block;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-}
-.third-content .action1 .content1{
-    display:inline-block;
-    width: 1500px;  
-    height: 410px;
-}
-.third-content .action1 .content1 .box1{
-    display: block;
-    width: 290px;  
-    height: 420px;
-    margin: 5px 5px;
-    float: left;
-}
-.third-content .action1 .content1 .box1 .Inbox1{
-    width: 285px;
-    height: 320px;
-    overflow: hidden;
-}
-.third-content .action1 .content1 .box1 .Inbox1 img{
-    display: block;
-    width: 100%;  
-    height: 100%;
-    object-fit: cover;
-    transition: transform 600ms;
-}
-.third-content .action1 .content1 .box1 .Inbox1:hover img{
-    transform: scale(1.15);
-}
-.third-content .action1 .content1 .box1 h3{
-    color: #fff;
-    font-size:larger;
-    margin-bottom: 7px;
-    margin-top: 5px;
-    padding-left: 10px;
-}
-.third-content .action1 .content1 .box1 p{
-    font-size: small;
-    display:inline-block;
-    background: grey;
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    color: #fff;
-    padding: 2px 2px;
-}
-.third-content .extend1{
-    border: 2px solid #1aeeef;
-    width: 180px;
-    margin-top: 420px;
-    margin-left: 755px;
-}
-.third-content .extend1 h4{
-    color: #1aeeef;
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    font-size: large;
-}
-.third-content .extend1 a{
-    text-decoration: none;
-}
-.third-content .extend1 h4:hover{
-    background: #1aeeef;
-    color: #1b2141;
-}
+}   
