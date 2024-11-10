@@ -150,17 +150,27 @@
     </div>
     <script>
         function purchaseGame() {
-            const game ={
-                name: "Sons Of The Forest",
-                Image:"..\picture\sonsforist-600x600.jpg"
-            }
-            //luu game
-            let buygames=JSON.parse(localStorage.getItem('buygames')) || [];
+        const game = {
+            name: "Sons of the Forest",
+        };
+        
+        
+        let buygames = JSON.parse(localStorage.getItem('buygames')) || [];
+        
+        
+        const DaMua = buygames.some(buygame => buygame.name === game.name);
+        
+        if (!DaMua) {
             buygames.push(game);
-            localStorage.setItem('buygames',JSON.stringify(buygames));
-
-            window.location.href='../../../library.html';
-        }   
+            localStorage.setItem('buygames', JSON.stringify(buygames));
+            alert("Game đã dc thêm vào library");
+        } else {
+            alert("Game đã được mua");
+        }
+        
+        
+        window.location.href = '../../../library.html';
+    }
     </script>
 </body>
 </html>
