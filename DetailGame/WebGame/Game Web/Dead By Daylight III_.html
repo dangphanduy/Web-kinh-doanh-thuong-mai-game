@@ -144,17 +144,26 @@
     </div>
     <script>
         function purchaseGame() {
-            const game ={
-                name: "Dead By Daylight III",
-                Image:"..\picture\Dead_By_Daylight_III.jpg"
-            }
-            //luu game
-            let buygames=JSON.parse(localStorage.getItem('buygames')) || [];
+        const game = {
+            name: "Dead By Daylight III",
+        };
+        
+        
+        let buygames = JSON.parse(localStorage.getItem('buygames')) || [];
+        
+        
+        const DaMua = buygames.some(buygame => buygame.name === game.name);
+        
+        if (!DaMua) {
             buygames.push(game);
-            localStorage.setItem('buygames',JSON.stringify(buygames));
-
-            window.location.href='../../../library.html';
-        }   
+            localStorage.setItem('buygames', JSON.stringify(buygames));
+            alert("Game đã dc thêm vào library");
+        } else {
+            alert("Game đã được mua");
+        }
+        
+        
+        window.location.href = '../../../library.html';
     </script>
 </body>
 </html>
