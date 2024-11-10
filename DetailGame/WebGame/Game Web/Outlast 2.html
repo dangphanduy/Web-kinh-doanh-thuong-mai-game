@@ -135,17 +135,27 @@
     </div>
     <script>
         function purchaseGame() {
-            const game ={
-                name: "Outlast 2",
-                Image:"..\picture\Outlast2.png"
-            }
-            //luu game
-            let buygames=JSON.parse(localStorage.getItem('buygames')) || [];
+        const game = {
+            name: "Outlast 2",
+        };
+        
+        
+        let buygames = JSON.parse(localStorage.getItem('buygames')) || [];
+        
+        
+        const DaMua = buygames.some(buygame => buygame.name === game.name);
+        
+        if (!DaMua) {
             buygames.push(game);
-            localStorage.setItem('buygames',JSON.stringify(buygames));
-
-            window.location.href='../../../library.html';
-        }   
+            localStorage.setItem('buygames', JSON.stringify(buygames));
+            alert("Game đã dc thêm vào library");
+        } else {
+            alert("Game đã được mua");
+        }
+        
+        
+        window.location.href = '../../../library.html';
+    }
     </script>
 </body>
 </html>
