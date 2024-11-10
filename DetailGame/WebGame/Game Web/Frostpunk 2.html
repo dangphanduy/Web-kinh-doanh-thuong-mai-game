@@ -148,17 +148,27 @@
     </div>
     <script>
         function purchaseGame() {
-            const game ={
-                name: "Frostpunk 2",
-                Image:"..\picture\Frostpunk-2-7423-1686520449.jpg"
-            }
-            //luu game
-            let buygames=JSON.parse(localStorage.getItem('buygames')) || [];
+        const game = {
+            name: "Frostpunk 2",
+        };
+        
+        
+        let buygames = JSON.parse(localStorage.getItem('buygames')) || [];
+        
+        
+        const DaMua = buygames.some(buygame => buygame.name === game.name);
+        
+        if (!DaMua) {
             buygames.push(game);
-            localStorage.setItem('buygames',JSON.stringify(buygames));
-
-            window.location.href='../../../library.html';
-        }   
+            localStorage.setItem('buygames', JSON.stringify(buygames));
+            alert("Game đã dc thêm vào library");
+        } else {
+            alert("Game đã được mua");
+        }
+        
+        
+        window.location.href = '../../../library.html';
+    }
     </script>
 </body>
 </html>
