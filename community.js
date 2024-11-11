@@ -1,6 +1,8 @@
-function Commend() {
-    const userInput = document.getElementById("text").value;
-    const text2Div = document.getElementById("text2");
+function Commend(button) {
+    const articleElement = button.closest(".commend2");
+    const userInput = articleElement.querySelector(".text-input").value;
+    const text2Div = articleElement.querySelector(".text2");
+
     if (userInput.trim() !== "") {
         const newMessage = document.createElement("p");
         newMessage.textContent = userInput;
@@ -8,7 +10,7 @@ function Commend() {
 
         text2Div.appendChild(newMessage);
 
-        document.getElementById("text").value = "";
+        articleElement.querySelector(".text-input").value = "";
     }
 }
 function toggleLike(button) {
